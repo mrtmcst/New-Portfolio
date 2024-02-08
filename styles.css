@@ -1,7 +1,7 @@
 /* Color Scheme */
 :root {
   --main-white: #F9F7F0;
-  --main-blue: #B9CDDA;
+  --main-blue: #020C12;
   --main-red: #9A334B;
   --main-green: #8EAF9D;
   --main-black: #04151F;
@@ -17,11 +17,15 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.4;
   color: var(--main-white);
   background-color: var(--main-black);
   display: block;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -52,7 +56,7 @@ body {
 }
 
 .nav-list a:hover {
-  color: var(--main-black);
+  color: var(--main-blue);
 }
 
 ul {
@@ -92,7 +96,6 @@ h3 {
 }
 
 .welcome-section p {
-  font-weight: 100;
   font-size: 1.4rem;
   margin-top: 100px;
   margin-right: 40px;
@@ -143,4 +146,66 @@ h3 {
 
 i {
   padding: 0.6rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-flow: column;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  background-image: linear-gradient(60deg, var(--main-black) 0%, #020C12 100%);
+  border-top: 2px solid var(--main-red);
+}
+
+.quote {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  margin-right: 40px;
+  padding-right: 25px;
+}
+
+.quote-owner {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: right;
+  margin-right: 40px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-section p {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .contact-links a {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    margin: 5px;
+  }
 }
