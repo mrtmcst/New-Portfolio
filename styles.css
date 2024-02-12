@@ -106,18 +106,27 @@ ul {
 }
 
 .welcome-section p {
-  font-size: 1.4rem;
-  margin-top: 100px;
+  font-size: 1.2rem;
   margin-right: 40px;
   margin-left: 40px;
-  text-align: justify;
+  text-align: center;
+}
+
+.paragraph {
+  margin-top: 100px;
 }
 
 /* Project Section */
 .projects-section {
   text-align: center;
   padding: 8rem 2rem;
-  background: var(--main-gray);
+  padding-top: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 8rem;
+  /* background: var(--main-gray); */
+  /* background-image: linear-gradient(60deg, #020C12 0%, var(--main-black) 100%); */
+  background-color: var(--main-gray);
 }
 
 .projects-section-header {
@@ -126,30 +135,52 @@ ul {
   border-bottom: 2px solid var(--main-white);
 }
 
+.projects-section-sub-header {
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 3rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
-/* .project {
-  background: var(--main-black);
-  Box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-} */
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--main-blue);
+  padding: 15px;
+  border-radius: 5px;
+}
 
 .project-image {
-  margin-top: 25px;
-  height: calc(100% - 13rem);
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
-p {
-  display: block;
+.project-title {
+  display: inline;
+  padding-top: 1rem;
+  padding-left:  0.5rem;
+  padding-right:  0.5rem;
+  font-size: 1.2rem;
+}
+
+.code {
+  color: var(--main-blue);
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover span {
+  color: var(--main-white)
 }
 
 /* Contacts Section */
