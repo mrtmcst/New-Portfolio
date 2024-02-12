@@ -28,6 +28,27 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: var(--main-red);
+  font-weight: 100;
+  font-size: 1.8rem;
+  /* text-align: center; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
 /* Navbar */
 .nav {
   display: flex;
@@ -59,6 +80,7 @@ html {
   color: var(--main-blue);
 }
 
+
 ul {
   display: block;
   margin-block-start: 0.5em;
@@ -66,22 +88,6 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-}
-
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-h3 {
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  color: var(--main-red);
-  font-weight: 100;
-  font-size: 1.8rem;
-  /* text-align: center; */
 }
 
 /* Welcome Section */
