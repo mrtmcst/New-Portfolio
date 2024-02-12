@@ -3,7 +3,7 @@
   --main-white: #F9F7F0;
   --main-blue: #020C12;
   --main-red: #9A334B;
-  --main-green: #8EAF9D;
+  --main-gray: #8F8F8F;
   --main-black: #04151F;
 }
 
@@ -81,7 +81,7 @@ h3 {
   color: var(--main-red);
   font-weight: 100;
   font-size: 1.8rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Welcome Section */
@@ -95,6 +95,10 @@ h3 {
   background-image: linear-gradient(60deg, var(--main-black) 0%, #020C12 100%);
 }
 
+.welcome-section h3 {
+  text-align: center;
+}
+
 .welcome-section p {
   font-size: 1.4rem;
   margin-top: 100px;
@@ -105,19 +109,15 @@ h3 {
 
 /* Project Section */
 .projects-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  padding-top: 300px;
-  background-image: linear-gradient(60deg, var(--main-black) 0%, #020C12 100%);
+  text-align: center;
+  padding: 8rem 2rem;
+  background: var(--main-gray);
 }
 
-.arcade-games h3 {
-  text-align: left;
-  font-style: normal;
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 1rem auto;
+  border-bottom: 2px solid var(--main-white);
 }
 
 .project-grid {
@@ -130,11 +130,16 @@ h3 {
   margin-bottom: 6rem;
 }
 
-/* continuar project section, começar por other pages e depois fazer os arcades*/
+/* .project {
+  background: var(--main-black);
+  Box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+} */
 
 .project-image {
   margin-top: 25px;
-  height: calc(100% - 15rem);
+  height: calc(100% - 13rem);
+  object-fit: cover;
 }
 
 p {
