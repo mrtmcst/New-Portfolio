@@ -91,6 +91,8 @@ ul {
   padding-inline-start: 40px;
 }
 
+/* Make hamburger icon and menu for mobile */
+
 /* Welcome Section */
 .welcome-section {
   display: flex;
@@ -187,9 +189,6 @@ ul {
 .project-tile:hover span {
   color: var(--main-white)
 }
-
-/* Fazer os cartões dos jogos mais pequenos para caberem na página toda quando se vai para esse separador */
-/* Acabar  */
 
 /* Contacts Section */
 .contacts-section {
