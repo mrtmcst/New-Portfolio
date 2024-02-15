@@ -47,6 +47,7 @@ h3 {
 a {
   text-decoration: none;
   color: var(--main-white);
+  margin-bottom: 50px;
 }
 
 /* Navbar */
@@ -148,6 +149,7 @@ ul {
   grid-gap: 20px;
   justify-items: center;
   align-items: center;
+  justify-content: space-around;
 }
 
 .project-tile {
@@ -162,8 +164,11 @@ ul {
 }
 
 .project-image {
-  max-width: 100%;
   height: auto;
+  width: 100%;
+  max-height: 300px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .project-title {
@@ -182,6 +187,9 @@ ul {
 .project-tile:hover span {
   color: var(--main-white)
 }
+
+/* Fazer os cartões dos jogos mais pequenos para caberem na página toda quando se vai para esse separador */
+/* Acabar  */
 
 /* Contacts Section */
 .contacts-section {
