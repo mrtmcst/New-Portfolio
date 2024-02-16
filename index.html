@@ -11,14 +11,14 @@
   </head>
   <body>
     <header>
-      <nav id="navbar" class="nav">
+      <!-- <nav id="navbar" class="nav">
         <ul class="nav-list">
           <li><a href="#welcome-section">About</a></li>
           <li><a href="#projects">Work</a></li>
           <li><a href="#contacts">Contact</a></li>
         </ul>
-      </nav>
-      <div id="hamburger-icon">
+      </nav> -->
+      <!-- <div id="hamburger-icon">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -26,6 +26,24 @@
           <li><a href="#welcome-section">About</a></li>
           <li><a href="#projects">Work</a></li>
           <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div> -->
+      <div id="brand"></div>
+      <nav>
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </header>
@@ -112,5 +130,6 @@
       <p class="quote"><em>"I believe we shouldn't quote other people when the only reason we're doing it is to sound deep"</em></p>
       <p class="quote-owner"><em>by Myself</em></p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
